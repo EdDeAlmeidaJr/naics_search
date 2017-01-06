@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{This gem gets the description corresponding to a certain NAICS code.}
   spec.description   = %q{This gem gets the description corresponding to a certain NAICS code. NAICS stands for North America Industry Classification System and this code is useful in any system dealing with companies' registration.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/EdDeAlmeidaJr/naics_search"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
