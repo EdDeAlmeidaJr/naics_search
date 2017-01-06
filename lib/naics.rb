@@ -16,4 +16,7 @@ module NAICS
   	HTTParty.post(@search_url, :query => {:words => @code})
   end
 
+  def self.version_info
+  end
+
 end

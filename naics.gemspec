@@ -5,7 +5,7 @@ require 'naics/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "naics"
-  spec.version       = Naics::VERSION
+  spec.version       = NAICS::VERSION
   spec.authors       = ["Ed de Almeida"]
   spec.email         = ["edvaldoajunior@gmail.com"]
 
