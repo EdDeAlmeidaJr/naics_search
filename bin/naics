@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require 'slop'
+require 'naics'
+
+opts = Slop.parse do |o|
+
+  # If --version is among the parameters, show version and exit
+  o.on '-v', '--version' do
+  	NAICS.version_info
+  	exit
+  end
+
+end
+
+code = opts.arguments[0]
+
+NAICS::description(code)
