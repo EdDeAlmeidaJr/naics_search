@@ -27,4 +27,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "nokogiri", "~> 1.7"
   spec.add_runtime_dependency "httparty", "~> 0.14"
+  spec.add_runtime_dependency "slop", "~> 4.4"
 end
