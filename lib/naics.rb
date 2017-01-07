@@ -10,7 +10,8 @@ module NAICS
   def self.search(code)
   	@code = code
   	@doc = Nokogiri::HTML(result_page)
-  	result = Hash.new 
+  	result = Hash.new
+  	resutt[:code] = code
   	result[:description] = description
   	result[:explanation] = explanation
   	result
