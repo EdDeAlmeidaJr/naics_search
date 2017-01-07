@@ -11,7 +11,7 @@ module NAICS
   	@code = code
   	@doc = Nokogiri::HTML(result_page)
   	result = Hash.new
-  	resutt[:code] = code
+  	result[:code] = code
   	result[:description] = description
   	result[:explanation] = explanation
   	result
