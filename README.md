@@ -1,6 +1,6 @@
 # NAICS
 
-[![Gem Version](https://badge.fury.io/rb/naics.svg)](https://badge.fury.io/rb/naics) [![Code Climate](https://codeclimate.com/github/EdDeAlmeidaJr/naics_search/badges/gpa.svg)](https://codeclimate.com/github/EdDeAlmeidaJr/naics_search)
+[![Gem Version](https://badge.fury.io/rb/naics.svg)](https://badge.fury.io/rb/naics) [![Code Climate](https://codeclimate.com/github/EdDeAlmeidaJr/naics_search/badges/gpa.svg)](https://codeclimate.com/github/EdDeAlmeidaJr/naics_search) [![Issue Count](https://codeclimate.com/github/EdDeAlmeidaJr/naics_search/badges/issue_count.svg)](https://codeclimate.com/github/EdDeAlmeidaJr/naics_search)
 
 NAICS = North American Industry Classification System
 
