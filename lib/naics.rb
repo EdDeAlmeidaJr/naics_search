@@ -32,6 +32,8 @@ module NAICS
   end
 
   def self.version_info
+    puts "NAICS gem - v#{NAICS::VERSION}"
+    puts "Author: Ed de Almeida (edvaldoajunior@gmail.com)"
   end
 
 end
