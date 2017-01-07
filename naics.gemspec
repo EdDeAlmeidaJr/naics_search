@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["edvaldoajunior@gmail.com"]
 
   spec.summary       = %q{This gem gets the description corresponding to a certain NAICS code.}
-  spec.description   = %q{This gem gets the description corresponding to a certain NAICS code. NAICS stands for North America Industry Classification System and this code is useful in any system dealing with companies' registration.}
+  spec.description   = %q{This gem gets the description corresponding to a certain NAICS code. NAICS stands for North American Industry Classification System and this code is useful in any system dealing with companies' registration.}
   spec.homepage      = "https://github.com/EdDeAlmeidaJr/naics_search"
   spec.license       = "MIT"
 
