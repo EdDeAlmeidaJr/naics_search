@@ -1,8 +1,9 @@
-# Naics
+# NAICS
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/naics`. To experiment with that code, run `bin/console` for an interactive prompt.
+NAICS = North American Industry Classification System
 
-TODO: Delete this and the text above, and describe your gem
+Every industry in the USA has a NAICS code and sometimes you need to know what this code means. This is what this Ruby gem does.
+
 
 ## Installation
 
@@ -20,9 +21,54 @@ Or install it yourself as:
 
     $ gem install naics
 
+
 ## Usage
 
-TODO: Write usage instructions here
+In order to use this gem, do
+
+```ruby
+    require 'naics'
+```
+
+in your code, and use the method `#search('string_with_the_code')`. The result will be an object in the format
+
+    {
+      :code => "string_with_the_code",
+      :description => "Description for the code given, if it exists",
+      :explanation => "A short paragraph explaining what the code means."
+    }
+
+For example, in you run
+
+```ruby
+    NAICS.search('423830')
+```
+
+your output will be
+
+    {
+      :code => "432830",
+      :description => "Machinery and Equipment Merchant Wholesalers",
+      :explanation => "This industry comprises establishments primarily engaged in the merchant wholesale distribution of specialized machinery, equipment, and related parts generally used in manufacturing, oil well, and warehousing activities."
+    }
+
+**Important:** If you get `:description => nil` and `:explanation => nil`, this only means the code you provided does not exist.
+
+
+## Command line
+
+This gem also provides a command line executable you may use. Only type
+
+    $ naics 432830
+
+and you'll get an output like:
+
+    Code:        423830
+    Description: Machinery and Equipment Merchant Wholesalers
+    Explanation: This industry comprises establishments primarily engaged in the merchant wholesale distribution of specialized machinery, equipment, and related parts generally used in manufacturing, oil well, and warehousing activities.
+
+**Important:** If you get no text in `Description:` and `Explanation`, this only means the code you provided does not exist.
+
 
 ## Development
 
@@ -30,9 +76,15 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+
+## Things to do for future releases
+
+- Search NAICS codes for given keywords.
+
+
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/naics.
+Bug reports and pull requests are welcome on GitHub at https://github.com/EdDeAlmeidaJr/naics_search.
 
 
 ## License
