@@ -2,6 +2,7 @@
 
 require 'slop'
 require 'naics'
+require 'pp'
 
 opts = Slop.parse do |o|
 
@@ -15,4 +16,8 @@ end
 
 code = opts.arguments[0]
 
-NAICS::search(code)
+puts "Code:        #{code}"
+
+res =  NAICS::search(code)
+
+res.each { |k,v| puts "#{k.capitalize}: #{v}" }
