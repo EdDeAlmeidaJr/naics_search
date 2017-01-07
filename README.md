@@ -1,5 +1,7 @@
 # NAICS
 
+[![Gem Version](https://badge.fury.io/rb/naics.svg)](https://badge.fury.io/rb/naics) [![Code Climate](https://codeclimate.com/github/EdDeAlmeidaJr/naics_search/badges/gpa.svg)](https://codeclimate.com/github/EdDeAlmeidaJr/naics_search)
+
 NAICS = North American Industry Classification System
 
 Every industry in the USA has a NAICS code and sometimes you need to know what this code means. This is what this Ruby gem does.
