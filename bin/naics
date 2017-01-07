@@ -15,4 +15,4 @@ end
 
 code = opts.arguments[0]
 
-NAICS::description(code)
+NAICS::search(code)
